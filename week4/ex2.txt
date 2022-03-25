@@ -1,0 +1,4 @@
+1. Find the name of suppliers of parts with red color and cost < 100 
+2. Find the names of suppliers who supply parts both with red color and cost  < 100 and with green color and cost < 100
+3. Find the SID of suppliers who supply parts with both red and green color with cost < 100
+4. Find the names of suppliers who supply parts both with red color and cost  < 100 and with green color and cost < 100
