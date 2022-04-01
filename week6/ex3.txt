@@ -1,0 +1,16 @@
+#1
+SELECT DISTINCT S.sname
+FROM Students as S, Registration as R
+WHERE R.sid = S.sid AND R.cid = 107 AND R.percent > 90
+#2
+SElECT COUNT(DISTINCT S.sid)
+FROM Students as S
+WHERE 75 <= ALL (SELECT S1.percent
+				 FROM Students as S1, Registration R1
+				 WHERE S1.sid = S.sid AND S1.sid = R1.sid)
+#3
+SELECT S.sid
+FROM Students S
+INNER JOIN Registration R ON S.sid = R.sid
+GROUP BY S.sid
+HAVING COUNT(*) <= 2

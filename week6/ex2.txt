@@ -1,0 +1,16 @@
+#1
+SELECT *
+FROM Author JOIN Book ON Author.id = Book.editor
+#2
+SELECT first_name, last_name
+FROM Author a
+EXCEPT 
+SELECT first_name, last_name
+FROM Author a1, Book b
+WHERE a1.author_id = b.editor
+#3
+SELECT author_id
+FROM Author 
+EXCEPT 
+SELECT editor
+FROM Book
