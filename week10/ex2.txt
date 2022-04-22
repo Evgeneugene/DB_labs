@@ -1,0 +1,7 @@
+1)
+1.Yes, they show the same information because in Repeatable read the transaction was not commited and it sees only the data that was read initially.
+2.After commiting transaction in 2nd terminal it shows changed data.
+3.The repeatable read has the data that was read at the start of transaction, therefore it does not see the changes in terminal 1 and will output the initial Alice's balance + 20.
+
+2)
+First two reads in T1 will be equal, because T2 was not commited and the isolation level is Read Commited. So the general result is that al people from group 2 except Bob will receive 15, and Bob gets the second group
