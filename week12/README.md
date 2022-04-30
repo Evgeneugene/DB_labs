@@ -81,7 +81,7 @@ WHERE r IS NULL
 RETURN f
 ```
 
-![ex2_4undefeated](ex2_4undefeated.png "Exercise 2.4 Undefeated")
+![g2_4_1](g2_4_1.png "Exercise 2_4_1")
 
 Defeated fighters:
 
@@ -93,7 +93,7 @@ WHERE r IS NULL
 RETURN f
 ```
 
-![ex2_4defeated](ex2_4defeated.png "Exercise 2.4 Defeated")
+![g2_4_2](g2_4_2.png "Exercise 2_4_2")
 
 ### Query 5
 
@@ -103,4 +103,6 @@ WITH f1, count(r) AS record
 SET f1.record = record
 RETURN f1
 ```
+
+![g2_5](g2_5.png "Exercise 2_5 ")
 
